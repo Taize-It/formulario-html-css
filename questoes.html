@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylequestao.css">
+    <title>Avaliação Siava</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+    *{
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    overflow: hidden;
+    background: rgb(29, 29, 29);
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 100.5%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.menu {
+    width: 100vw;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5rem;
+    -webkit-box-shadow: 10px 9px 17px -7px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 9px 17px -7px rgba(0,0,0,1);
+    box-shadow: 10px 9px 17px -7px rgba(0,0,0,1);
+}
+
+.menu .menu_logo {
+    font-size: 2rem;
+    color: orangered;
+    cursor: pointer;
+}
+
+.menu .ul_menu {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.6rem;
+}
+
+
+.menu .ul_menu li a {
+    display: block;
+    padding: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: orangered;
+    transition: all .3s ease-in;
+}
+
+.menu .ul_menu li a:hover {
+    color: white;
+}
+
+.box{
+    color: white;
+    position: absolute;
+    
+}
+
+.btn_box {
+    color: white;
+    background-color: orangered;
+    padding: 1.2rem;
+    width: 20rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    align-items: center;
+}
+
+.btn_box:hover {
+    background-color: white;
+    color: orangered;
+
+}
+
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <nav class="menu">
+            <h1 class="menu_logo" >Program Siave</h1>
+            <ul class="ul_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+    <div class="box">
+        <form action="corrigir.php" method="get">
+            <h1>Programação WEB, HTML e CSS</h1>
+            <br><br>
+            <fieldset>
+                <legend>1- O que significa a sigla HTML?</legend>
+                <br>
+                <input type="radio" name="q1" id="q1a" value="a">
+                <label for="q1a">A- HyperTransfer Markup Language</label>
+                <input type="radio" name="q1" id="q1b" value="b">
+                <label for="q1b">B- HyperText Markup Language</label>
+                <input type="radio" name="q1" id="q1c" value="c">
+                <label for="q1c">C- HighTech Markup Language</label>
+                <input type="radio" name="q1" id="q1d" value="d">
+                <label for="q1d">D- HyperText Model Language</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>2- Qual atributo é usado para adicionar estilos diretamente a um elemento HTML?</legend>
+                <br>
+                <input type="radio" name="q2" id="q2a" value="a">
+                <label for="q2a">A- class</label>
+                <input type="radio" name="q2" id="q2b" value="b">
+                <label for="q2b">B- style</label>
+                <input type="radio" name="q2" id="q2c" value="c">
+                <label for="q2c">C- design</label>
+                <input type="radio" name="q2" id="q2d" value="d">
+                <label for="q2d">D- format</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>3- Como definir a cor de fundo de um elemento em CSS?</legend>
+                <br>
+                <input type="radio" name="q3" id="q3a" value="a">
+                <label for="q3a">A- color</label>
+                <input type="radio" name="q3" id="q3b" value="b">
+                <label for="q3b">B- background</label>
+                <input type="radio" name="q3" id="q3c" value="c">
+                <label for="q3c">C- background-color</label>
+                <input type="radio" name="q3" id="q3d" value="d">
+                <label for="q3d">D- text-color</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>4- Como definir a fonte do texto em CSS?</legend>
+                <br>
+                <input type="radio" name="q4" id="q4a" value="a">
+                <label for="q4a">A- font-style</label>
+                <input type="radio" name="q4" id="q4b" value="b">
+                <label for="q4b">B- typeface</label>
+                <input type="radio" name="q4" id="q4c" value="c">
+                <label for="q4c">C- font-family</label>
+                <input type="radio" name="q4" id="q4d" value="d">
+                <label for="q4d">D- text-font</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>5-  Qual é a finalidade da propriedade "box-sizing" em CSS?</legend>
+                <br>
+                <input type="radio" name="q5" id="q5a" value="a">
+                <label for="q5a">A- Define o tamanho total da caixa</label>
+                <input type="radio" name="q5" id="q5b" value="b">
+                <label for="q5b">B- Define a cor da borda da caixa</label>
+                <input type="radio" name="q5" id="q5c" value="c">
+                <label for="q5c">C- Define a margem interna da caixa</label>
+                <input type="radio" name="q5" id="q5d" value="d">
+                <label for="q5d">D- Define a posição da caixa na página</label>
+            </fieldset>
+            <br>
+            <button class="btn_box">Finalizar Avaliação</button>
+
+        </form>
+    </div>
